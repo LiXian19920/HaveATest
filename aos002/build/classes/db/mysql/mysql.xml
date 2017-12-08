@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqls SYSTEM "sql_definition.dtd">
+<sqls>
+	<sql group="order">
+		<i id="1">select * from clazz</i>
+		<i id="2">select * from course</i>
+	</sql>
+	<sql group="order2">
+		<i id="1">select * from student s where s.name = {name:s.name}</i>
+	</sql>
+</sqls>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Forms SYSTEM "form_definition.dtd">
+<Forms>
+	<form id="testbasic">
+		<widgets>
+			<basic name="a" widget="Edit" label="edit控件" attr="ime:Auto"></basic>
+			<basic name="b" widget="Int" label="Int控件"></basic>
+			<basic name="c" widget="Float" label="float控件" attr="fraction:1;canNegative:true"></basic>
+			<basic name="d" widget="password" label="password控件"></basic>
+			<basic name="e" widget="Hidden" label="隐藏控件"></basic>
+		</widgets>
+	</form>
+</Forms>

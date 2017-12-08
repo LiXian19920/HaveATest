@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT sqls (sql+)>
+<!ELEMENT sql (i+)>
+<!ELEMENT i (#PCDATA)>
+<!ATTLIST sql	
+	group CDATA #REQUIRED
+	desp CDATA #IMPLIED
+>
+<!ATTLIST i
+	id CDATA #REQUIRED	
+	desp CDATA #IMPLIED
+>

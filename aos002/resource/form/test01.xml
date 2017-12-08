@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Forms SYSTEM "form_definition.dtd">
+<Forms>
+	<form id="test1" js="cacu">
+		<toolbar>
+			<btn id="btn1" text="刷新" onclick="PT.open('test02');"></btn>
+		</toolbar>
+		<widgets>
+			<basic name="a"></basic>
+			<basic name="b"></basic>
+			<basic name="c"></basic>
+			<basic name="btnAdd" widget="Button" label="+"></basic>
+			<basic name="red" widget="Button" label="ok" onclick="alert('ok');"></basic>
+		</widgets>
+		<bind element="btnAdd" event="click"><![CDATA[
+			var av = parseInt(PT.get('a'));
+			var bv = parseInt(PT.get('b'));
+			PT.set('c',add(av,bv));
+			
+			
+		]]></bind>
+		<bind element="this" event="onCreate">alert('bind element ok');</bind>
+
+		<bind element="btn1" event="click">alert('toolbar ok')</bind>
+		<bind element="document" event="click">alert(PT.wid('param3').get());</bind>
+		<bind element="btn3" event="dblclick">alert(PT.wid('param3').get());</bind>
+	</form>
+	<js id="cacu"><![CDATA[
+		function add(a,b){
+			return a + b;
+		}
+	]]></js>
+</Forms>

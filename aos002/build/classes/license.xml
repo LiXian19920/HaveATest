@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<license serial="597311497696026576" project="aos" title="航天信息AOS开发平台" authorizedto="aisino" projectdata="111" dog="n" type="develop">
+<limit concurrent="3" expiration="2016-05-25" maxdb="3" clients="3" maxform="6000"></limit>
+<key>4319a9baaec40a7cf5b009b3a5c89de2b0ed0ba7d04fed5c8eb8fb20e96d2b8d7f4079344992838e96c3ad567db5d9de7339ab512bbb77bc4dbbe67adabd8e5652dbb395c85fe131af2131a00702cb6951046905d2bdaed6080caf228868d7f386114d8b1f460cf625cd8e545f3784521261a84aef596b0bbc1934eec8b5552920ddb464dbfa2633a04e8739e12013ec23ba01d9c8527466133a40681b4c090de5a2d85faf64cf17ce8190c5a6d07c6eb8ae12d82d4d9257f99f81b8d9b0b711427ab904f3ec3d957a3fd2e34cb7de4d1e219ef96e855532648417ca0fa77c916b8c126a464beae8898051e12bfcea1ea25a3dce27c36efaa25fbf9c29d817d9</key>
+</license>

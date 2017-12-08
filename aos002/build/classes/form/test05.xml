@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Forms SYSTEM "form_definition.dtd">
+<Forms>
+	<form id="aos_basic_DateChooser" desp="日期控件练习">
+		<widgets>
+			<layout type="BandLayout" attr="groupSize:1">
+				<layout type="TableLayout" name="tab1" attr="groupSize:1">
+					<basic name="d" label="日期" widget="DateChooser" default="today" />
+				</layout>
+				<layout type="TableLayout" attr="groupSize:1">
+					<basic name="get" label="取值的方法" widget="Button" width="210px"></basic>
+					<basic name="set" label="设置值的方法" widget="Button" width="210px"></basic>
+					<basic name="getDate" label="取值，得到一个日期对象" widget="Button"
+						width="210px"></basic>
+					<basic name="addDay" label="给当前日期增加（减少）相应的天数" widget="Button"
+						width="210px"></basic>
+					<basic name="addMonth" label="给当前日期增加（减少）相应的月数" widget="Button"
+						width="210px"></basic>
+					<basic name="setDisabled1" label="设置不可用" widget="Button"
+						width="210px"></basic>
+					<basic name="setDisabled2" label="设置可用" widget="Button"
+						width="210px"></basic>
+					<basic name="hiding" label="隐藏控件" widget="Button" width="210px"></basic>
+					<basic name="showing" label="显示控件" widget="Button" width="210px"></basic>
+				</layout>
+			</layout>
+		</widgets>
+		<bind element="get" event="click">
+			alert(w('d').get());
+		</bind>
+		<bind element="set" event="click">
+			w('d').set('2018-09-09');
+		</bind>
+		<bind element="getDate" event="click">
+			alert(w('d').getDate());
+		</bind>
+		<bind element="addDay" event="click">
+			w('d').addDay(4);
+		</bind>
+		<bind element="addMonth" event="click">
+			w('d').addMonth(2);
+		</bind>
+		<bind element="setDisabled1" event="click">
+			w('d').setDisabled(true);
+		</bind>
+		<bind element="setDisabled2" event="click">
+			w('d').setDisabled(false);
+		</bind>
+		<bind element="hiding" event="click">
+			w('d').hiding();
+		</bind>
+		<bind element="showing" event="click">
+			w('d').showing();
+		</bind>
+	</form>
+</Forms>

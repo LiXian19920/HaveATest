@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Forms SYSTEM "form_definition.dtd">
+<Forms>
+	<form id="testbasic">
+		<toolbar>
+			<btn id="btn1" text="test" >
+				<item text="test1" id="test1" onclick="alert('test1')"/>
+				<item text="test2" id="test2" onclick="alert('test2')"/>
+				<item text="aaa"/>
+				<item text="test4" id="test4" onclick="alert('test4')"/>
+			</btn>
+		</toolbar>
+		<widgets>
+			<layout type="TableLayout" name="tablelayout" desp="标题">
+				<basic name="date" label="开始日期" widget="BtnEdit" default="ccc"></basic>
+			</layout>
+		</widgets>
+		<extendPoint>
+			<plugin type="com.aisino.basic.DynMenuPlugin"></plugin>
+		</extendPoint>
+	</form>
+</Forms>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Forms SYSTEM "form_definition.dtd">
+<Forms>
+	<form id="testRestore">
+		<toolbar>
+			<btn id="aa" text="更改控件状态关联"
+				onclick="PT.changeLinkToState('a2','B');PT.changeLinkToState('a3','F');"></btn>
+			<btn id="bb" text="恢复初始状态" onclick="PT.restoreState();"></btn>
+			<btn id="cc" text="设置页面状态" onclick="PT.setState('A');"></btn>
+			<btn id="aaa" text="数值范围"></btn>
+		</toolbar>
+		<widgets>
+			<basic name="a1" label="stateA" linkToState="A"></basic>
+			<basic name="a2" label="stateA_B" linkToState="B"></basic>
+			<basic name="a3" label="stateABC" linkToState="A,B,C"></basic>
+
+			<basic name="aaa" label="数值范围" checks="Range" checkattr="min:2;max:30"></basic>
+
+			<layout type="BandLayout" name="BandLayout" width="100%">
+				<basic name="require" widget="Edit" label="必须项目验证" require="true"
+					checkattr="msg:必须输入项目;" default="093jda"></basic>
+				<basic name="Email" widget="Edit" label="Email" checks="Email"
+					checkattr="msg:Email不对;"></basic>
+				<basic name="Integer" label="Integer" checks="Integer"
+					checkattr="min:34;max:5535"></basic>
+				<basic name="numbit" label="numbit" widget="Float" checks="numbit"
+					checkattr="bit:3"></basic>
+				<basic name="num0bit" label="num0bit" widget="Float" checks="num0bit"
+					checkattr="bit:5"></basic>
+				<basic name="reg" label="reg" checks="Reg" checkattr="reg:^aabb.*;">
+				</basic>
+			</layout>
+		</widgets>
+
+	</form>
+</Forms>

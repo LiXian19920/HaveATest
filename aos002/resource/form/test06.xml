@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Forms SYSTEM "form_definition.dtd">
+<Forms>
+	<form id="aos_basic_TrueFalseBox" desp="TrueFalseBox双值选择控件练习">
+		<widgets>
+			<layout type="BandLayout" attr="groupSize:1">
+				<layout type="TableLayout" name="tab1" attr="groupSize:1">
+					<basic name="ed" leftSpace="20" label="TrueFalseBox双值选择控件"
+						widget="TrueFalseBox" attr='truevalue:1'></basic>
+					<basic name="get" label="get()" widget="Button" hint="取值的方法"
+						width="150px"></basic>
+					<basic name="set" label="set(value)" widget="Button" hint="设置值的方法"
+						width="150px"></basic>
+					<basic name="setDisabled" label="setDisabled(isdisable)"
+						widget="Button" hint="设置是否可用，true为不可用，false为可用" width="150px"></basic>
+					<basic name="hiding" label="hiding()" widget="Button" hint="隐藏控件"
+						width="150px"></basic>
+					<basic name="showing" label="showing()" widget="Button" hint="显示控件"
+						width="150px"></basic>
+				</layout>
+			</layout>
+		</widgets>
+		<bind element="get" event="click">
+			alert(w('ed').get());
+		</bind>
+		<bind element="set" event="click">
+			w('ed').set('1');
+		</bind>
+		<bind element="setDisabled" event="click">
+			w('ed').setDisabled(true);
+		</bind>
+		<bind element="hiding" event="click">
+			w('ed').hiding();
+		</bind>
+		<bind element="showing" event="click">
+			w('ed').showing();
+		</bind>
+	</form>
+</Forms>
